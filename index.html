@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>CSGO Ultimate Bravery</title>
+</head>
+
+<body>
+    <video autoplay loop muted id="bgvid">
+        <source src="assets/nuke540p.webm" type="video/webm">
+    </video>
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <div class="container">
+            <div class="d-flex w-50"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <div class="navbar-nav w-100 justify-content-center">
+                    <img class="d-flex" src="assets/logo.png"></img>
+                </div>
+                <div class="nav navbar-nav ms-auto w-100 justify-content-end">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#rulesModal">Rules</a>
+                        <a type="button" class="btn btn-success">BigHoot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content resultContainer">
+                    <div class="modal-header" id="modalHeader">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rulesModalLabel">Rules</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>1. You must play with the randomized weapon only. You can change it at the cost of kevlar & helmet for the rest of the game.</h6>
+                  <h6>2. You must buy the randomized weapon everytime you can, even if it means no kevlar.</h6>
+                  <h6>3. Stuff is authorized only if you bought the randomized weapon first.</h6>
+                  <h6>4. CSGO Ultimate Bravery is all about fun. If you want to yolo rush B cyka, do it.</h6>
+                  <h6>5. Slava Ukraini</h6>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="wpnWrapper">
+            <div id="wpnWrapper">
+                <div id="random">
+                    <div id="randomContainer" class="mask">
+                        <div id="randomContainerHolder"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnWrapper">
+            <div class="row navbtnpos">
+                <div class="navbtn" id="openNav" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom">WEAPON MENU</div>
+                <div class="navbtn" id="randomizer">BE BRAVE</div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-bottom botnav" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="row botNavHolder">
+                <div class="col" id="colPistols">
+                    <h3 id="yoloPistol">PISTOLS</h3>
+                </div>
+                <div class="col" id="colShotguns">
+                    <h3 id="yoloShotgun">SHOTGUNS</h3>
+                </div>
+                <div class="col" id="colPms">
+                    <h3 id="yoloPm">PMs</h3>
+                </div>
+                <div class="col" id="colRifles">
+                    <h3 id="yoloRifle">RIFLES</h3>
+                </div>
+                <div class="col" id="colMachineguns">
+                    <h3 id="yoloMachinegun">MACHINEGUNS</h3>
+                </div>
+                <div class="col" id="colSnipes">
+                    <h3 id="yoloSnipe">SNIPES</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

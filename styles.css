@@ -1,0 +1,1123 @@
+
+/* TESSSSSSSSSSSST */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('http://fonts.cdnfonts.com/css/rajdhani');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+#offcanvasBottom {
+    font-family: 'Bebas Neue';
+    font-size: 1.3em;
+}
+
+.itemNameWrap {
+    display: flex;
+    text-align: left;
+    margin: 4px;
+    vertical-align: middle;
+}
+html, button, input, select, textarea { font-family: sans-serif; overflow-x: hidden; overflow-y: hidden}
+
+html, body {
+    color: white;
+}
+
+
+.main {
+    min-height: 39vw;
+}
+
+
+/* Weapon Flexbox */
+
+.weaponContainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  .weaponCat:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+    margin-left: 7vw;
+  }
+  
+  .weaponCat:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+  }
+  
+  .weaponCat:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+  }
+  
+  .weaponCat:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+  }
+  
+  .weaponCat:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+  }
+  
+  .weaponCat:nth-child(6) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 15vw;
+  }
+
+
+
+/* WeaponItems */
+
+.weaponCat-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .weapon-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .weapon-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .weapon-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .weapon-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .weapon-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .weapon-items:nth-child(6) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+
+
+/* Custom checkbox */
+
+
+
+.roundedBtn {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-right: 5px;
+    background: #fcfff4;
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .roundedBtn label {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+  }
+  .roundedBtn label:after {
+    content: '';
+    width: 6px;
+    height: 3px;
+    position: absolute;
+    top: 3px;
+    left: 1.5px;
+    border: 2px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+  .roundedBtn label:hover::after {
+    opacity: 0.3;
+  }
+  .roundedBtn input[type=checkbox] {
+    visibility: hidden;
+  }
+  .roundedBtn input[type=checkbox]:checked + label:after {
+    opacity: 1;
+  }
+
+.navbar-brand {
+  font-family: 'Rajdhani';
+}
+
+.nav-link {
+  margin-top: 15px;
+  font-family: 'Rajdhani';
+  font-size: 1.5em;
+  color: #fff !important;
+}
+
+  .botnav {
+    background: rgba(0, 0, 0, 0.787);
+  }
+
+  .btnWrapper {
+    width: 100vw;
+    display: block;
+  }
+  .wpnWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+
+  .navbtnpos {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    align-items: left;
+    justify-content: center;
+    bottom: 30vh !important;
+  }
+
+  .navbtn {
+    left: 0;
+    right: 0;
+    font-size: 1.3em;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    margin: 10px;
+    width: 170px;
+    height: 55px;
+    background: linear-gradient(#1d7751, #0e382c);
+    border: 1px #25793b solid; 
+    border-radius: 5px;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+    transition: .1s;
+    transform: scale(1);
+    cursor: pointer;
+    box-shadow: 0 0 50px rgba(0,117,9,0.5);
+    overflow: hidden;
+  }
+
+
+  
+  .navbtn:hover {
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+    transform: scale(1.05);
+  }
+  
+  .navbtn:active {
+    background: linear-gradient(#1f8258, #114435);
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+    transform: scale(1);
+    box-shadow: 0 0 75px rgba(43,137,68,0.5);
+  }
+  
+  .navbtn:after {
+    content: "";
+    position: relative;
+    top: -120px;
+    left: -90px;
+    display: block;
+    width: 35px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(35deg);
+    transition: none;
+  }
+  
+  .navbtn:hover:after {
+    left: 400px;
+    transition: .3s ease-in-out;
+  }
+
+
+ #random {
+  height: 100px;
+  position: relative;
+  margin-top: 25vh;
+  width: 900px;
+ }
+ #randomContainer {
+  display : none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  overflow:hidden
+ }
+
+ #wpnWrapper {
+   display: flex;
+   width: 100%;
+   height: 50%;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   justify-content: center;
+   align-items: center;
+ }
+
+ /*#randomContainer:after {
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    top   : 0;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 10%, rgba(23,23,23,0) 35%, rgba(23,23,23,0) 65%, rgba(23,23,23,1) 90%, rgba(23,23,23,1) 100%);
+                      
+    width    : 100%;
+    height   : 100%;
+ }*/
+
+ .mask {
+   position: absolute;
+   top   : 0;
+   left     : 0;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%);
+ }
+ 
+ 
+
+  #randomContainerHolder{
+    width: 9999999999999999999px;
+    max-width: 999999999999999999px;
+    height: 100%;
+    background: #191726;
+    margin-left: 0;
+    transition: all 8s cubic-bezier(.08,.6,0,1);
+    background: rgba(0, 0, 0, 0.75);
+  }
+  #randomContainer img{
+    width: 150px ;
+    background-repeat: no-repeat;
+  }
+  #randomContainer:before {
+    content: "";
+    position: absolute;
+    border: none;
+    z-index: 12222225;
+    width: 5px;
+    height: 100%;
+    left: 50%;
+    background: #07be3e;
+  }
+  .selectorOverlay {
+    border: 2px solid #66b233;
+    position: relative;
+    top: -1px;
+        border-bottom: 4px solid #66b233;
+}
+
+
+.resultContainer #modalHeader, #modalBody  {
+  font-family: 'Rajdhani', sans-serif;
+  border-bottom:0;
+  margin: auto auto;
+}
+
+.resultContainer h1, h2, p, ul, li, hr{
+  background: rgba(255, 0, 0, 0);
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9998;
+  background: transparent
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-size: cover;
+}
+.resultContainer {
+  background: rgba(0, 0, 0, 0.75);
+}
+.botNavHolder {
+  display: flex;
+  padding-top:4vh;
+  padding-left:4vw;
+  justify-content: center;
+}
+
+#rulesModal .modal-content {
+  background-color: rgba(0, 0, 0, 0.76);
+}
+#rulesModal .modal-header, .modal-body, .modal-footer {
+  border-bottom: 0;
+  border-top: 0;
+  font-family: 'rajdhani'
+}
+
+
+
+@media (max-width: 480px) {
+  #randomContainer img{
+    width: 145px ;
+  }
+}
+
+@media (max-height: 380px) {
+  #randomContainer img{
+    width: 147px ;
+  }
+  #random{
+    margin-top: 0px;
+  }
+}
+
+@media (max-height: 414px) {
+  #randomContainer img{
+    width: 150px ;
+  }
+  #random{
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1167px) {
+.botnav {
+  background: rgba(0, 0, 0, 0.787);
+}
+
+  .offcanvas-bottom{
+    height: 370px;
+  }
+  #offcanvasBottom {
+    font-size: 1em;
+  }
+  #colPistols > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+#colPistols {
+  min-width: 355px;
+  padding-bottom: 30px;
+}
+#colShotguns > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+#colShotguns {
+  min-width: 355px;
+}
+#colPms > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+#colPms {
+  min-width: 355px;
+}
+#colRifles > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+#colMachineguns > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+#colSnipes > .row > div.col.col-lg-2{
+  flex: 0 0 auto;
+    width: 16.66666667%;
+}
+}
+@media (max-width: 1084px) {
+  .botnav {
+    background: rgba(0, 0, 0, 0.787);
+  }
+  
+    .offcanvas-bottom{
+      height: 370px;
+    }
+    #offcanvasBottom {
+      font-size: 1em;
+    }
+    #colPistols > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  #colPistols {
+    min-width: 329px;
+    padding-bottom: 30px;
+  }
+  #colShotguns > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  #colShotguns {
+    min-width: 329px;
+  }
+  #colPms > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  #colPms {
+    min-width: 329px;
+  }
+  #colRifles > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  #colMachineguns > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  #colSnipes > .row > div.col.col-lg-2{
+    flex: 0 0 auto;
+      width: 16.66666667%;
+  }
+  }
+
+  @media (max-width: 1003px) {
+    .botnav {
+      background: rgba(0, 0, 0, 0.787);
+    }
+    
+      .offcanvas-bottom{
+        height: 370px;
+      }
+      #offcanvasBottom {
+        font-size: 1em;
+      }
+      #colPistols > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #colPistols {
+      min-width: 303px;
+      padding-bottom: 30px;
+    }
+    #colShotguns > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #colShotguns {
+      min-width: 303px;
+    }
+    #colPms > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #colPms {
+      min-width: 303px;
+    }
+    #colRifles > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #colMachineguns > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #colSnipes > .row > div.col.col-lg-2{
+      flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    }
+
+    @media (max-width: 921px) {
+      .botnav {
+        background: rgba(0, 0, 0, 0.787);
+      }
+      
+        .offcanvas-bottom{
+          height: 370px;
+        }
+        #offcanvasBottom {
+          font-size: 1em;
+        }
+        #colPistols > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      #colPistols {
+        min-width: 279px;
+        padding-bottom: 30px;
+      }
+      #colShotguns > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      #colShotguns {
+        min-width: 279px;
+      }
+      #colPms > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      #colPms {
+        min-width: 279px;
+      }
+      #colRifles > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      #colMachineguns > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      #colSnipes > .row > div.col.col-lg-2{
+        flex: 0 0 auto;
+          width: 16.66666667%;
+      }
+      }
+
+
+      @media (max-width: 946px) {
+        .botnav {
+          background: rgba(0, 0, 0, 0.787);
+        }
+        
+          .offcanvas-bottom{
+            height: 370px;
+          }
+          #offcanvasBottom {
+            font-size: 1em;
+          }
+          #colPistols > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        #colPistols {
+          min-width: 285px;
+          padding-bottom: 30px;
+        }
+        #colShotguns > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        #colShotguns {
+          min-width: 285px;
+        }
+        #colPms > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        #colPms {
+          min-width: 285px;
+        }
+        #colRifles > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        #colMachineguns > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        #colSnipes > .row > div.col.col-lg-2{
+          flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+        }
+
+
+
+        @media (max-width: 865px) {
+          .botnav {
+            background: rgba(0, 0, 0, 0.787);
+          }
+          
+            .offcanvas-bottom{
+              height: 370px;
+            }
+            #offcanvasBottom {
+              font-size: 1em;
+            }
+            #colPistols > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          #colPistols {
+            min-width: 260px;
+            padding-bottom: 30px;
+          }
+          #colShotguns > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          #colShotguns {
+            min-width: 260px;
+          }
+          #colPms > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          #colPms {
+            min-width: 260px;
+          }
+          #colRifles > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          #colMachineguns > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          #colSnipes > .row > div.col.col-lg-2{
+            flex: 0 0 auto;
+              width: 16.66666667%;
+          }
+          }
+          @media (max-width: 787px) {
+            .botnav {
+              background: rgba(0, 0, 0, 0.787);
+            }
+            
+              .offcanvas-bottom{
+                height: 370px;
+              }
+              #offcanvasBottom {
+                font-size: 1em;
+              }
+              #colPistols > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            #colPistols {
+              min-width: 235px;
+              padding-bottom: 30px;
+            }
+            #colShotguns > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            #colShotguns {
+              min-width: 235px;
+            }
+            #colPms > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            #colPms {
+              min-width: 235px;
+            }
+            #colRifles > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            #colMachineguns > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            #colSnipes > .row > div.col.col-lg-2{
+              flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            }
+
+            @media (max-width: 709px) {
+              .botnav {
+                background: rgba(0, 0, 0, 0.787);
+              }
+              
+                .offcanvas-bottom{
+                  height: 370px;
+                }
+                #offcanvasBottom {
+                  font-size: 1em;
+                }
+                #colPistols > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              #colPistols {
+                min-width: 211px;
+                padding-bottom: 30px;
+              }
+              #colShotguns > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              #colShotguns {
+                min-width: 211px;
+              }
+              #colPms > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              #colPms {
+                min-width: 211px;
+              }
+              #colRifles > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              #colMachineguns > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              #colSnipes > .row > div.col.col-lg-2{
+                flex: 0 0 auto;
+                  width: 16.66666667%;
+              }
+              }
+
+              @media (max-width: 634px) {
+                .botnav {
+                  background: rgba(0, 0, 0, 0.787);
+                }
+                
+                  .offcanvas-bottom{
+                    height: 370px;
+                  }
+                  #offcanvasBottom {
+                    font-size: 1em;
+                  }
+                  #colPistols > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                #colPistols {
+                  min-width: 187px;
+                  padding-bottom: 30px;
+                }
+                #colShotguns > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                #colShotguns {
+                  min-width: 187px;
+                }
+                #colPms > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                #colPms {
+                  min-width: 187px;
+                }
+                #colRifles > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                #colMachineguns > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                #colSnipes > .row > div.col.col-lg-2{
+                  flex: 0 0 auto;
+                    width: 16.66666667%;
+                }
+                }
+
+                @media (max-width: 559px) {
+                  .botnav {
+                    background: rgba(0, 0, 0, 0.787);
+                  }
+                  
+                    .offcanvas-bottom{
+                      height: 370px;
+                    }
+                    #offcanvasBottom {
+                      font-size: 1em;
+                    }
+                    #colPistols > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  #colPistols {
+                    min-width: 163px;
+                    padding-bottom: 30px;
+                  }
+                  #colShotguns > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  #colShotguns {
+                    min-width: 163px;
+                  }
+                  #colPms > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  #colPms {
+                    min-width: 163px;
+                  }
+                  #colRifles > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  #colMachineguns > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  #colSnipes > .row > div.col.col-lg-2{
+                    flex: 0 0 auto;
+                      width: 16.66666667%;
+                  }
+                  }
+
+
+                  @media (max-width: 559px) {
+                    .botnav {
+                      background: rgba(0, 0, 0, 0.787);
+                    }
+                    
+                      .offcanvas-bottom{
+                        height: 370px;
+                      }
+                      #offcanvasBottom {
+                        font-size: 0.8em;
+                      }
+                      #colPistols > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    #colPistols {
+                      min-width: 163px;
+                      padding-bottom: 30px;
+                    }
+                    #colShotguns > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    #colShotguns {
+                      min-width: 163px;
+                    }
+                    #colPms > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    #colPms {
+                      min-width: 163px;
+                    }
+                    #colRifles > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    #colMachineguns > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    #colSnipes > .row > div.col.col-lg-2{
+                      flex: 0 0 auto;
+                        width: 16.66666667%;
+                    }
+                    }
+
+                    @media (max-width: 484px) {
+                      .botnav {
+                        background: rgba(0, 0, 0, 0.787);
+                        overflow-x: hidden
+                      }
+                      
+                        .offcanvas-bottom{
+                          top: 0;
+                          left: 0;
+                          width: 200px;
+                          height: 100%;
+                          border-right: 1px solid rgba(0,0,0,.2);
+                          transform: translateX(-100%);
+                        }
+                        #offcanvasBottom {
+                          font-size: 0.8em;
+                        }
+                        #colPistols > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      #colPistols {
+                        min-width: 200px;
+                        padding-bottom: 10px;
+                      }
+                      #colShotguns > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      #colShotguns {
+                        min-width: 200px;
+                        padding-bottom: 10px;
+                      }
+                      #colPms > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      #colPms {
+                        min-width: 200px;
+                        padding-bottom: 10px;
+                      }
+                      #colRifles {
+                        min-width: 200px;
+                        padding-bottom: 10px;
+                      }
+                      #colMachineguns {
+                        min-width: 200px;
+                        padding-bottom: 10px;
+                      }
+                      #colSnipes {
+                        min-width: 200px;
+                      }
+                      #colRifles > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      #colMachineguns > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      #colSnipes > .row > div.col.col-lg-2{
+                        flex: 0 0 auto;
+                          width: 16.66666667%;
+                      }
+                      }
+
+
+                      @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+                        html {
+                        transform: rotate(90deg);
+                        transform-origin: left top;
+                        width: 100vh;
+                        overflow-x: hidden;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        }
+                        }
+
+                        #yoloPistol:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+                        
+                        #yoloShotgun:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+                        
+                        #yoloPm:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+                        
+                        #yoloRifle:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+                        
+                        #yoloMachinegun:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+                        
+                        #yoloSnipe:hover{
+                          -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                          cursor: pointer
+                        }
+
+                        
+                        @-webkit-keyframes fade-in {
+                          0% {
+                            opacity: 0;
+                          }
+                          100% {
+                            opacity: 1;
+                          }
+                        }
+                        @keyframes fade-in {
+                          0% {
+                            opacity: 0;
+                          }
+                          100% {
+                            opacity: 1;
+                          }
+                        }
+                        
